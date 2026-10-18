@@ -1,0 +1,25 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0e1015; --fg: #f2f0ea; --muted: #9aa0ad;
+  --accent: #ff7a4d; --road: #1b1e26;
+}
+body { 
+    background: var(--bg); 
+    color: var(--fg); 
+    margin: 0; 
+    overflow-x: 
+    hidden;
+  font-family: "Helvetica Neue", Arial, sans-serif; 
+}
+.will { will-change: transform, opacity; }
+.letter { 
+    display: inline-block; 
+    white-space: pre; 
+}
+.glow { 
+    background: radial-gradient(60% 50% at 50% 100%,
+  color-mix(in srgb, var(--accent) 25%, transparent), transparent); 
+}
